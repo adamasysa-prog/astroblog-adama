@@ -4,271 +4,101 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Astroblog Adama – poznaj fascynujący świat astrofizyki, astronomii i kosmologii.">
-<title>Astroblog Adama | Odkrywamy Wszechświat</title>
+<title>ASTROBLOG ADAMA</title>
 
 <style>
-:root {
-  --bg: #070d1d;
-  --panel: #101c36;
-  --panel2: #142443;
-  --blue: #64aaff;
-  --light: #eaf2ff;
-  --muted: #a9bad8;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--light);
   font-family: Arial, sans-serif;
+  background: #071426;
+  color: #eaf3ff;
   line-height: 1.7;
 }
 
 header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  padding: 18px 7%;
-  background: rgba(10, 20, 42, 0.96);
-  border-bottom: 1px solid #263b60;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
+  background: #102b4c;
+  padding: 22px;
+  text-align: center;
 }
 
-.logo {
-  color: var(--blue);
-  font-size: 23px;
-  font-weight: bold;
-  letter-spacing: 1px;
+header h1 {
+  margin: 0;
+  color: #75bdff;
+  font-size: 30px;
 }
 
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
+nav { margin-top: 10px; }
 
 nav a {
-  color: var(--light);
+  color: white;
   text-decoration: none;
-  font-size: 14px;
+  margin: 0 12px;
 }
 
-nav a:hover {
-  color: var(--blue);
+main {
+  max-width: 1050px;
+  margin: auto;
+  padding: 25px 18px;
 }
+
+h2 { color: #75bdff; }
 
 .hero {
-  min-height: 510px;
-  padding: 110px 20px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  background:
-    radial-gradient(ellipse at 50% 80%, #174c91 0%, transparent 55%),
-    radial-gradient(ellipse at 20% 20%, #192b61 0%, transparent 50%),
-    linear-gradient(135deg, #080e20, #101b3b, #080e20);
-}
-
-.stars {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background-image:
-    radial-gradient(2px 2px at 20% 30%, white, transparent),
-    radial-gradient(2px 2px at 70% 20%, white, transparent),
-    radial-gradient(1px 1px at 40% 70%, white, transparent),
-    radial-gradient(2px 2px at 85% 75%, white, transparent),
-    radial-gradient(1px 1px at 15% 80%, white, transparent);
-  background-size: 180px 180px;
-  animation: stars 30s linear infinite;
-}
-
-@keyframes stars {
-  from { background-position: 0 0; }
-  to { background-position: 180px 180px; }
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 850px;
-}
-
-.eyebrow {
-  color: #86baff;
-  letter-spacing: 4px;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.hero h1 {
-  font-size: clamp(38px, 7vw, 76px);
-  line-height: 1.1;
-  margin: 20px 0;
+  padding: 35px 15px;
 }
 
 .hero p {
-  font-size: 19px;
-  color: #c3d3ee;
-}
-
-.button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 13px 26px;
-  border-radius: 8px;
-  background: #347fe0;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.2s;
-}
-
-.button:hover {
-  background: #5b9df5;
-  transform: translateY(-3px);
-}
-
-section {
-  padding: 65px 8%;
-  max-width: 1400px;
+  max-width: 700px;
   margin: auto;
 }
 
-.section-label {
-  color: var(--blue);
-  letter-spacing: 3px;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 32px;
-  margin-top: 5px;
-}
-
-.intro {
-  color: var(--muted);
-  max-width: 700px;
-}
-
-.articles {
+.gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 22px;
-  margin-top: 30px;
 }
 
 .card {
-  background: linear-gradient(145deg, #152748, #0e1a33);
-  border: 1px solid #263e65;
-  border-radius: 14px;
-  padding: 25px;
-  transition: 0.25s;
+  background: #10243d;
+  border: 1px solid #25496d;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-.card:hover {
-  transform: translateY(-6px);
-  border-color: var(--blue);
+.card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
 }
 
-.card-icon {
-  font-size: 35px;
-}
+.card-content { padding: 15px; }
 
-.card h3 {
-  color: #a9d0ff;
-}
+.card h3 { color: #8ccaff; }
 
-.card p {
-  color: var(--muted);
-}
-
-.card a {
-  color: var(--blue);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.news {
-  background: #0c1730;
-  border-top: 1px solid #203454;
-  border-bottom: 1px solid #203454;
-  max-width: none;
-}
-
-.news-inner {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.fact {
-  border-left: 4px solid var(--blue);
-  padding: 20px 25px;
-  background: #142443;
-  border-radius: 0 10px 10px 0;
-  margin-top: 25px;
-}
-
-.fact p {
-  color: var(--muted);
+article {
+  background: #10243d;
+  border-radius: 12px;
+  padding: 22px;
+  margin-top: 30px;
 }
 
 footer {
-  padding: 35px 20px;
-  background: #091226;
   text-align: center;
-  color: var(--muted);
-  border-top: 1px solid #263b60;
+  background: #102b4c;
+  padding: 20px;
+  margin-top: 35px;
+  color: #c4d8ed;
 }
 
-footer strong {
-  color: var(--blue);
-}
+a { color: #8ccaff; }
 
 @media (max-width: 600px) {
-  header {
-    justify-content: center;
-    text-align: center;
-  }
-
-  nav {
-    justify-content: center;
-    gap: 12px;
-  }
-
-  .hero {
-    padding: 80px 20px;
-  }
-
-  section {
-    padding: 45px 6%;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    scroll-behavior: auto !important;
-    animation: none !important;
-    transition: none !important;
-  }
+  header h1 { font-size: 25px; }
+  nav a { display: inline-block; margin: 5px; }
 }
 </style>
 </head>
@@ -276,145 +106,86 @@ footer strong {
 <body>
 
 <header>
-  <div class="logo">🌌 ASTROBLOG ADAMA</div>
-
+  <h1>ASTROBLOG ADAMA</h1>
   <nav>
-    <a href="#start">Start</a>
-    <a href="#tematy">Tematy</a>
-    <a href="#ciekawostki">Ciekawostki</a>
-    <a href="#omnie">O blogu</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#artykul">Artykuł</a>
+    <a href="#onas">O blogu</a>
   </nav>
 </header>
 
 <main>
 
-<div class="hero" id="start">
-  <div class="stars"></div>
-
-  <div class="hero-content">
-    <div class="eyebrow">ASTRONOMIA • ASTROFIZYKA • KOSMOLOGIA</div>
-
-    <h1>Odkrywaj tajemnice Wszechświata</h1>
-
-    <p>
-      Od najmniejszych planet po największe galaktyki.
-      Poznaj fascynujący świat kosmosu.
-    </p>
-
-    <a href="#tematy" class="button">Rozpocznij odkrywanie →</a>
-  </div>
-</div>
-
-<section id="tematy">
-  <div class="section-label">BAZA WIEDZY</div>
-  <h2>Odkrywaj kosmos</h2>
-
-  <p class="intro">
-    Wszechświat skrywa wiele niezwykłych tajemnic.
-    Poznaj najważniejsze zagadnienia astronomii i astrofizyki.
+<section class="hero">
+  <h2>Odkrywamy tajemnice Wszechświata</h2>
+  <p>
+    Witaj na Astroblogu Adama! Poznaj galaktyki, czarne dziury,
+    planety i niezwykłe zjawiska kosmiczne.
   </p>
+</section>
 
-  <div class="articles">
+<section id="galeria">
+  <h2>Galeria kosmosu</h2>
 
-    <article class="card">
-      <div class="card-icon">🕳️</div>
-      <h3>Czarne dziury</h3>
-      <p>
-        Poznaj obiekty o tak silnej grawitacji,
-        że nawet światło nie może z nich uciec.
-      </p>
-      <a href="#ciekawostki">Dowiedz się więcej →</a>
-    </article>
+  <div class="gallery">
 
-    <article class="card">
-      <div class="card-icon">🪐</div>
-      <h3>Układ Słoneczny</h3>
-      <p>
-        Odkrywaj planety, księżyce, komety
-        i inne obiekty naszego kosmicznego domu.
-      </p>
-      <a href="#ciekawostki">Dowiedz się więcej →</a>
-    </article>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=700"
+           alt="Kolorowa galaktyka">
+      <div class="card-content">
+        <h3>Galaktyki</h3>
+        <p>Olbrzymie skupiska gwiazd, gazu i pyłu kosmicznego.</p>
+      </div>
+    </div>
 
-    <article class="card">
-      <div class="card-icon">🌌</div>
-      <h3>Galaktyki</h3>
-      <p>
-        Poznaj Drogę Mleczną oraz ogromne
-        skupiska gwiazd i materii.
-      </p>
-      <a href="#ciekawostki">Dowiedz się więcej →</a>
-    </article>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=700"
+           alt="Gwiazdy na nocnym niebie">
+      <div class="card-content">
+        <h3>Gwiazdy</h3>
+        <p>Gorące kule gazu, które świecą w ogromnej przestrzeni kosmicznej.</p>
+      </div>
+    </div>
 
-    <article class="card">
-      <div class="card-icon">✨</div>
-      <h3>Wielki Wybuch</h3>
-      <p>
-        Poznaj historię rozszerzania się
-        Wszechświata i jego początków.
-      </p>
-      <a href="#ciekawostki">Dowiedz się więcej →</a>
-    </article>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=700"
+           alt="Ziemia widziana z kosmosu">
+      <div class="card-content">
+        <h3>Nasza Ziemia</h3>
+        <p>Nasza planeta jest małą częścią ogromnego Wszechświata.</p>
+      </div>
+    </div>
 
   </div>
 </section>
 
-<section class="news" id="ciekawostki">
-  <div class="news-inner">
-    <div class="section-label">KOSMICZNA WIEDZA</div>
-    <h2>Czy wiesz, że...?</h2>
-
-    <div class="fact">
-      <h3>☀️ Słońce jest gwiazdą</h3>
-      <p>
-        Słońce znajduje się w centrum Układu Słonecznego
-        i dostarcza Ziemi światło oraz energię.
-      </p>
-    </div>
-
-    <div class="fact">
-      <h3>🌌 Droga Mleczna</h3>
-      <p>
-        Nasz Układ Słoneczny znajduje się
-        w galaktyce nazywanej Drogą Mleczną.
-      </p>
-    </div>
-
-    <div class="fact">
-      <h3>🔭 Patrząc w kosmos, patrzymy w przeszłość</h3>
-      <p>
-        Światło potrzebuje czasu, aby dotrzeć do naszych teleskopów.
-        Dlatego obserwujemy odległe obiekty takimi, jakie były wcześniej.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section id="omnie">
-  <div class="section-label">O PROJEKCIE</div>
-  <h2>Astroblog Adama</h2>
-
-  <p class="intro">
-    Witaj na Astroblogu Adama! To miejsce stworzone
-    z pasji do astronomii, astrofizyki i odkrywania
-    tajemnic Wszechświata.
+<article id="artykul">
+  <h2>Czym są czarne dziury?</h2>
+  <p>
+    Czarne dziury to obszary przestrzeni, w których grawitacja jest
+    tak silna, że nawet światło nie może się z nich wydostać.
   </p>
-
-  <p class="intro">
-    Chcę dzielić się tutaj wiedzą, ciekawostkami
-    i fascynującymi odkryciami dotyczącymi kosmosu.
+  <p>
+    Powstają między innymi po zapadnięciu się bardzo masywnych gwiazd.
+    Naukowcy badają je, aby lepiej zrozumieć Wszechświat.
   </p>
-</section>
+</article>
+
+<article id="onas">
+  <h2>O Astroblogu</h2>
+  <p>
+    ASTROBLOG ADAMA to miejsce dla osób ciekawych kosmosu.
+    Będziemy poznawać astronomię, odkrycia naukowe i tajemnice
+    Wszechświata.
+  </p>
+</article>
 
 </main>
 
 <footer>
-  <strong>ASTROBLOG ADAMA</strong>
-  <p>Odkrywamy Wszechświat, krok po kroku. 🌌</p>
-  <p>© 2026 Astroblog Adama</p>
+  <p>© 2026 ASTROBLOG ADAMA | Kosmos jest fascynujący!</p>
+  <p>Zdjęcia: Unsplash</p>
 </footer>
 
 </body>
 </html>
-
-
