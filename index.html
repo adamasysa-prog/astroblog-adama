@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Astroblog Adama | Odkrywamy Wszechświat</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080e20;
+  color: #edf2ff;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 25px 8%;
+  background: #101b35;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #83baff;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
+nav a:hover {
+  color: #83baff;
+}
+
+.hero {
+  text-align: center;
+  padding: 110px 20px;
+  background: linear-gradient(135deg, #101b35, #22204d, #101b35);
+}
+
+.hero h1 {
+  font-size: clamp(35px, 7vw, 65px);
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #bdc9e8;
+  font-size: 19px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 25px;
+  background: #397fe8;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+section {
+  padding: 55px 8%;
+}
+
+h2 {
+  color: #83baff;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: #14213e;
+  padding: 25px;
+  border-radius: 13px;
+  border: 1px solid #293d66;
+}
+
+.card p {
+  color: #c2cde5;
+  line-height: 1.6;
+}
+
+.card a {
+  color: #83baff;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #101b35;
+  color: #aab8d5;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🌌 ASTROBLOG ADAMA</div>
+  <nav>
+    <a href="#start">Start</a>
+    <a href="#artykuly">Artykuły</a>
+    <a href="#omnie">O blogu</a>
+  </nav>
+</header>
+
+<div class="hero" id="start">
+  <h1>Odkrywaj Wszechświat</h1>
+  <p>Fascynujący świat astrofizyki, astronomii i kosmologii.</p>
+  <a href="#artykuly" class="button">Odkryj artykuły →</a>
+</div>
+
+<section id="artykuly">
+  <h2>🌠 Najciekawsze tematy</h2>
+
+  <div class="articles">
+
+    <div class="card">
+      <h3>🕳️ Czarne dziury</h3>
+      <p>Poznaj jedne z najbardziej niezwykłych obiektów we Wszechświecie.</p>
+      <a href="#omnie">Czytaj więcej →</a>
+    </div>
+
+    <div class="card">
+      <h3>🪐 Układ Słoneczny</h3>
+      <p>Odkrywaj planety, księżyce i inne obiekty naszego kosmicznego domu.</p>
+      <a href="#omnie">Czytaj więcej →</a>
+    </div>
+
+    <div class="card">
+      <h3>🌌 Galaktyki</h3>
+      <p>Dowiedz się, jak powstają galaktyki i jak wygląda nasza Droga Mleczna.</p>
+      <a href="#omnie">Czytaj więcej →</a>
+    </div>
+
+    <div class="card">
+      <h3>✨ Początki Wszechświata</h3>
+      <p>Poznaj teorię Wielkiego Wybuchu i historię kosmosu.</p>
+      <a href="#omnie">Czytaj więcej →</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="omnie">
+  <h2>🔭 O Astroblogu Adama</h2>
+  <p>
+    Witaj na Astroblogu Adama! To miejsce poświęcone
+    odkrywaniu tajemnic Wszechświata, astrofizyce,
+    astronomii i niezwykłym zjawiskom kosmicznym.
+  </p>
+  <p>
+    Kosmos jest pełen zagadek. Razem spróbujemy je odkrywać!
+  </p>
+</section>
+
+<footer>
+  © 2026 Astroblog Adama | Odkrywamy Wszechświat 🌌
+</footer>
+
+</body>
+</html>
