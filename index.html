@@ -81,9 +81,27 @@ h2 { color: #75bdff; }
 
 article {
   background: #10243d;
+  border: 1px solid #25496d;
   border-radius: 12px;
   padding: 22px;
   margin-top: 30px;
+}
+
+/* Sekcja O mnie */
+.about {
+  background: linear-gradient(135deg, #102b4c, #163b60);
+  border: 1px solid #3974a8;
+  border-radius: 14px;
+  padding: 24px;
+  margin-top: 30px;
+}
+
+.about h2 {
+  margin-top: 0;
+}
+
+.about p {
+  font-size: 16px;
 }
 
 footer {
@@ -110,7 +128,7 @@ a { color: #8ccaff; }
   <nav>
     <a href="#galeria">Galeria</a>
     <a href="#artykul">Artykuł</a>
-    <a href="#onas">O blogu</a>
+    <a href="#onas">O mnie</a>
   </nav>
 </header>
 
@@ -171,14 +189,24 @@ a { color: #8ccaff; }
   </p>
 </article>
 
-<article id="onas">
-  <h2>O Astroblogu</h2>
+<section id="onas" class="about">
+  <h2>👨‍🚀 O mnie – Adam</h2>
+
   <p>
-    ASTROBLOG ADAMA to miejsce dla osób ciekawych kosmosu.
-    Będziemy poznawać astronomię, odkrycia naukowe i tajemnice
-    Wszechświata.
+    Mam 11 lat i interesuję się astrofizyką. Fascynują mnie czarne
+    dziury, prawa rządzące Wszechświatem oraz tajemnice jego powstania.
   </p>
-</article>
+
+  <p>
+    Mam własną teorię na temat powstania Wszechświata, którą chciałbym
+    kiedyś przedstawić szerzej.
+  </p>
+
+  <p>
+    Stworzyłem tego bloga, aby dzielić się wiedzą, pomysłami
+    i odkryciami z innymi miłośnikami kosmosu!
+  </p>
+</section>
 
 </main>
 
