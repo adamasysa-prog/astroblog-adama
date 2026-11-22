@@ -1,219 +1,71 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ASTROBLOG ADAMA</title>
-
-<style>
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #071426;
-  color: #eaf3ff;
-  line-height: 1.7;
-}
-
-header {
-  background: #102b4c;
-  padding: 22px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  color: #75bdff;
-  font-size: 30px;
-}
-
-nav { margin-top: 10px; }
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 12px;
-}
-
-main {
-  max-width: 1050px;
-  margin: auto;
-  padding: 25px 18px;
-}
-
-h2 { color: #75bdff; }
-
-.hero {
-  text-align: center;
-  padding: 35px 15px;
-}
-
-.hero p {
-  max-width: 700px;
-  margin: auto;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 22px;
-}
-
-.card {
-  background: #10243d;
-  border: 1px solid #25496d;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.card img {
-  width: 100%;
-  height: 190px;
-  object-fit: cover;
-  display: block;
-}
-
-.card-content { padding: 15px; }
-
-.card h3 { color: #8ccaff; }
-
-article {
-  background: #10243d;
-  border: 1px solid #25496d;
-  border-radius: 12px;
-  padding: 22px;
-  margin-top: 30px;
-}
-
-/* Sekcja O mnie */
-.about {
-  background: linear-gradient(135deg, #102b4c, #163b60);
-  border: 1px solid #3974a8;
-  border-radius: 14px;
-  padding: 24px;
-  margin-top: 30px;
-}
-
-.about h2 {
-  margin-top: 0;
-}
-
-.about p {
-  font-size: 16px;
-}
-
-footer {
-  text-align: center;
-  background: #102b4c;
-  padding: 20px;
-  margin-top: 35px;
-  color: #c4d8ed;
-}
-
-a { color: #8ccaff; }
-
-@media (max-width: 600px) {
-  header h1 { font-size: 25px; }
-  nav a { display: inline-block; margin: 5px; }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASTROBLOG ADAMA</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header>
+    <h1>ASTROBLOG ADAMA</h1>
+    <nav>
+      <a href="#galeria">Galeria</a>
+      <a href="#artykul">Artykuł</a>
+      <a href="#onas">O mnie</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>ASTROBLOG ADAMA</h1>
-  <nav>
-    <a href="#galeria">Galeria</a>
-    <a href="#artykul">Artykuł</a>
-    <a href="#onas">O mnie</a>
-  </nav>
-</header>
+  <main>
+    <section class="hero">
+      <h2>Odkrywamy tajemnice Wszechświata</h2>
+      <p>Witaj na Astroblogu Adama! Poznaj galaktyki, czarne dziury, planety i niezwykłe zjawiska kosmiczne.</p>
+    </section>
 
-<main>
-
-<section class="hero">
-  <h2>Odkrywamy tajemnice Wszechświata</h2>
-  <p>
-    Witaj na Astroblogu Adama! Poznaj galaktyki, czarne dziury,
-    planety i niezwykłe zjawiska kosmiczne.
-  </p>
-</section>
-
-<section id="galeria">
-  <h2>Galeria kosmosu</h2>
-
-  <div class="gallery">
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=700"
-           alt="Kolorowa galaktyka">
-      <div class="card-content">
-        <h3>Galaktyki</h3>
-        <p>Olbrzymie skupiska gwiazd, gazu i pyłu kosmicznego.</p>
+    <section id="galeria">
+      <h2>Galeria kosmosu</h2>
+      <div class="gallery">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=700" alt="Kolorowa galaktyka">
+          <div class="card-content">
+            <h3>Galaktyki</h3>
+            <p>Olbrzymie skupiska gwiazd, gazu i pyłu kosmicznego.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=700" alt="Gwiazdy na nocnym niebie">
+          <div class="card-content">
+            <h3>Gwiazdy</h3>
+            <p>Gorące kule gazu, które świecą w ogromnej przestrzeni kosmicznej.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=700" alt="Ziemia widziana z kosmosu">
+          <div class="card-content">
+            <h3>Nasza Ziemia</h3>
+            <p>Nasza planeta jest małą częścią ogromnego Wszechświata.</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=700"
-           alt="Gwiazdy na nocnym niebie">
-      <div class="card-content">
-        <h3>Gwiazdy</h3>
-        <p>Gorące kule gazu, które świecą w ogromnej przestrzeni kosmicznej.</p>
-      </div>
-    </div>
+    <article id="artykul">
+      <h2>Czym są czarne dziury?</h2>
+      <p>Czarne dziury to obszary przestrzeni, w których grawitacja jest tak silna, że nawet światło nie może się z nich wydostać.</p>
+      <p>Powstają między innymi po zapadnięciu się bardzo masywnych gwiazd. Naukowcy badają je, aby lepiej zrozumieć Wszechświat.</p>
+    </article>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=700"
-           alt="Ziemia widziana z kosmosu">
-      <div class="card-content">
-        <h3>Nasza Ziemia</h3>
-        <p>Nasza planeta jest małą częścią ogromnego Wszechświata.</p>
-      </div>
-    </div>
+    <section id="onas" class="about">
+      <h2>👨‍🚀 O mnie – Adam</h2>
+      <p>Mam 11 lat i interesuję się astrofizyką. Fascynują mnie czarne dziury, prawa rządzące Wszechświatem oraz tajemnice jego powstania.</p>
+      <p>Mam własną teorię na temat powstania Wszechświata, którą chciałbym kiedyś przedstawić szerzej.</p>
+      <p>Stworzyłem tego bloga, aby dzielić się wiedzą, pomysłami i odkryciami z innymi miłośnikami kosmosu!</p>
+    </section>
+  </main>
 
-  </div>
-</section>
-
-<article id="artykul">
-  <h2>Czym są czarne dziury?</h2>
-  <p>
-    Czarne dziury to obszary przestrzeni, w których grawitacja jest
-    tak silna, że nawet światło nie może się z nich wydostać.
-  </p>
-  <p>
-    Powstają między innymi po zapadnięciu się bardzo masywnych gwiazd.
-    Naukowcy badają je, aby lepiej zrozumieć Wszechświat.
-  </p>
-</article>
-
-<section id="onas" class="about">
-  <h2>👨‍🚀 O mnie – Adam</h2>
-
-  <p>
-    Mam 11 lat i interesuję się astrofizyką. Fascynują mnie czarne
-    dziury, prawa rządzące Wszechświatem oraz tajemnice jego powstania.
-  </p>
-
-  <p>
-    Mam własną teorię na temat powstania Wszechświata, którą chciałbym
-    kiedyś przedstawić szerzej.
-  </p>
-
-  <p>
-    Stworzyłem tego bloga, aby dzielić się wiedzą, pomysłami
-    i odkryciami z innymi miłośnikami kosmosu!
-  </p>
-</section>
-
-</main>
-
-<footer>
-  <p>© 2026 ASTROBLOG ADAMA | Kosmos jest fascynujący!</p>
-  <p>Zdjęcia: Unsplash</p>
-</footer>
-
+  <footer>
+    <p>© 2026 ASTROBLOG ADAMA | Kosmos jest fascynujący!</p>
+    <p>Zdjęcia: Unsplash</p>
+  </footer>
 </body>
 </html>
