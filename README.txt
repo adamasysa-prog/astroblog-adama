@@ -1,14 +1,17 @@
-ASTROBLOG ADAMA
+ASTROBLOG ADAMA — artykuł o Betelgezie
 
-Pliki strony:
-- index.html — zawartość strony (teksty, sekcje i zdjęcia)
-- style.css — wygląd strony (kolory, rozmiary, odstępy)
+W paczce znajduje się:
+- betelgeza.html — gotowy artykuł z trzema zdjęciami.
 
-Jak opublikować na GitHub Pages:
-1. Rozpakuj ZIP na komputerze.
-2. Otwórz repozytorium astroblog-adama na GitHubie.
-3. Kliknij Add file -> Upload files.
-4. Przeciągnij pliki index.html i style.css (nie cały folder).
+Jak dodać artykuł do GitHuba:
+1. Rozpakuj plik ZIP.
+2. Otwórz repozytorium astroblog-adama.
+3. Kliknij Add file → Upload files.
+4. Przeciągnij plik betelgeza.html.
 5. Kliknij Commit changes.
 
-Nie usuwaj ani nie zmieniaj nazwy index.html — GitHub Pages go potrzebuje.
+Nie usuwaj ani nie podmieniaj index.html i style.css.
+Zdjęcia wyświetlają się z serwera ESO, więc wymagają połączenia z internetem.
+
+Po opublikowaniu:
+https://adamasysa-prog.github.io/astroblog-adama/betelgeza.html
