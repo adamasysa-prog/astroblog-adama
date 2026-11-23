@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -5,67 +6,172 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ASTROBLOG ADAMA</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .article-card {
+      background: #10233d;
+      border: 1px solid #24466f;
+      border-radius: 14px;
+      padding: 22px;
+      margin: 30px 0;
+      color: white;
+    }
+
+    .article-card h2 {
+      color: #75c7ff;
+    }
+
+    .article-button {
+      display: inline-block;
+      background: #2476c7;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .article-button:hover {
+      background: #398fe0;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 35px 20px;
+    }
+  </style>
 </head>
+
 <body>
+
   <header>
     <h1>ASTROBLOG ADAMA</h1>
     <nav>
       <a href="#galeria">Galeria</a>
-      <a href="#artykul">Artykuł</a>
+      <a href="#artykul">Czarne dziury</a>
+      <a href="#betelgeza">Betelgeza</a>
       <a href="#onas">O mnie</a>
     </nav>
   </header>
 
   <main>
+
     <section class="hero">
-      <h2>Odkrywamy tajemnice Wszechświata</h2>
-      <p>Witaj na Astroblogu Adama! Poznaj galaktyki, czarne dziury, planety i niezwykłe zjawiska kosmiczne.</p>
+      <h2>Odkrywamy tajemnice Wszechświata 🌌</h2>
+      <p>
+        Witaj na Astroblogu Adama! Poznaj galaktyki,
+        czarne dziury, planety i niezwykłe zjawiska kosmiczne.
+      </p>
     </section>
 
     <section id="galeria">
       <h2>Galeria kosmosu</h2>
+
       <div class="gallery">
+
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=700" alt="Kolorowa galaktyka">
+          <img
+            src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=700"
+            alt="Kolorowa galaktyka">
           <div class="card-content">
             <h3>Galaktyki</h3>
-            <p>Olbrzymie skupiska gwiazd, gazu i pyłu kosmicznego.</p>
+            <p>
+              Olbrzymie skupiska gwiazd, gazu i pyłu kosmicznego.
+            </p>
           </div>
         </div>
+
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=700" alt="Gwiazdy na nocnym niebie">
+          <img
+            src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=700"
+            alt="Gwiazdy na nocnym niebie">
           <div class="card-content">
             <h3>Gwiazdy</h3>
-            <p>Gorące kule gazu, które świecą w ogromnej przestrzeni kosmicznej.</p>
+            <p>
+              Gorące kule gazu, które świecą w ogromnej przestrzeni kosmicznej.
+            </p>
           </div>
         </div>
+
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=700" alt="Ziemia widziana z kosmosu">
+          <img
+            src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=700"
+            alt="Ziemia widziana z kosmosu">
           <div class="card-content">
             <h3>Nasza Ziemia</h3>
-            <p>Nasza planeta jest małą częścią ogromnego Wszechświata.</p>
+            <p>
+              Nasza planeta jest małą częścią ogromnego Wszechświata.
+            </p>
           </div>
         </div>
+
       </div>
     </section>
 
     <article id="artykul">
       <h2>Czym są czarne dziury?</h2>
-      <p>Czarne dziury to obszary przestrzeni, w których grawitacja jest tak silna, że nawet światło nie może się z nich wydostać.</p>
-      <p>Powstają między innymi po zapadnięciu się bardzo masywnych gwiazd. Naukowcy badają je, aby lepiej zrozumieć Wszechświat.</p>
+
+      <p>
+        Czarne dziury to obszary przestrzeni, w których
+        grawitacja jest tak silna, że nawet światło nie może
+        się z nich wydostać.
+      </p>
+
+      <p>
+        Powstają między innymi po zapadnięciu się bardzo
+        masywnych gwiazd. Naukowcy badają je, aby lepiej
+        zrozumieć Wszechświat.
+      </p>
     </article>
+
+    <!-- ARTYKUŁ O BETELGEZIE -->
+
+    <section id="betelgeza" class="article-card">
+      <h2>⭐ Betelgeza – olbrzymia gwiazda z Oriona</h2>
+
+      <p>
+        Czy wiesz, że na niebie znajduje się gwiazda
+        tak ogromna, że jest znacznie większa od naszego Słońca?
+        Poznaj niezwykłą Betelgezę!
+      </p>
+
+      <p>
+        Dowiedz się, dlaczego zmienia jasność, jak wielka jest
+        i co może się z nią wydarzyć w przyszłości.
+      </p>
+
+      <a href="betelgeza.html" class="article-button">
+        Czytaj artykuł o Betelgezie →
+      </a>
+    </section>
 
     <section id="onas" class="about">
       <h2>👨‍🚀 O mnie – Adam</h2>
-      <p>Mam 11 lat i interesuję się astrofizyką. Fascynują mnie czarne dziury, prawa rządzące Wszechświatem oraz tajemnice jego powstania.</p>
-      <p>Mam własną teorię na temat powstania Wszechświata, którą chciałbym kiedyś przedstawić szerzej.</p>
-      <p>Stworzyłem tego bloga, aby dzielić się wiedzą, pomysłami i odkryciami z innymi miłośnikami kosmosu!</p>
+
+      <p>
+        Mam 11 lat i interesuję się astrofizyką.
+        Fascynują mnie czarne dziury, prawa rządzące
+        Wszechświatem oraz tajemnice jego powstania.
+      </p>
+
+      <p>
+        Mam własną teorię na temat powstania Wszechświata,
+        którą chciałbym kiedyś przedstawić szerzej.
+      </p>
+
+      <p>
+        Stworzyłem tego bloga, aby dzielić się wiedzą,
+        pomysłami i odkryciami z innymi miłośnikami kosmosu!
+      </p>
     </section>
+
   </main>
 
   <footer>
     <p>© 2026 ASTROBLOG ADAMA | Kosmos jest fascynujący!</p>
     <p>Zdjęcia: Unsplash</p>
   </footer>
+
 </body>
 </html>
