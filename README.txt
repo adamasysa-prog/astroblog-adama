@@ -1,17 +1,27 @@
-ASTROBLOG ADAMA — artykuł o Betelgezie
+ASTROBLOG ADAMA — PACZKA Z ARTYKUŁEM
 
-W paczce znajduje się:
-- betelgeza.html — gotowy artykuł z trzema zdjęciami.
+Plik w paczce:
+- teoria-ciemno-skutkowa.html
 
-Jak dodać artykuł do GitHuba:
-1. Rozpakuj plik ZIP.
-2. Otwórz repozytorium astroblog-adama.
-3. Kliknij Add file → Upload files.
-4. Przeciągnij plik betelgeza.html.
-5. Kliknij Commit changes.
+JAK DODAĆ ARTYKUŁ NA GITHUB:
+1. Rozpakuj tę paczkę ZIP.
+2. Otwórz repozytorium: adamasysa-prog/astroblog-adama.
+3. Wybierz Add file → Upload files.
+4. Przeciągnij tylko plik teoria-ciemno-skutkowa.html.
+5. Zatwierdź przyciskiem Commit changes.
 
-Nie usuwaj ani nie podmieniaj index.html i style.css.
-Zdjęcia wyświetlają się z serwera ESO, więc wymagają połączenia z internetem.
+WAŻNE:
+- Nie usuwaj ani nie nadpisuj index.html.
+- Nie usuwaj ani nie nadpisuj style.css.
+- Plik artykułu dodaj do głównego katalogu repozytorium.
 
-Po opublikowaniu:
-https://adamasysa-prog.github.io/astroblog-adama/betelgeza.html
+Po opublikowaniu artykuł będzie dostępny pod adresem:
+https://adamasysa-prog.github.io/astroblog-adama/teoria-ciemno-skutkowa.html
+
+Jeśli chcesz dodać odnośnik do artykułu na stronie głównej, później trzeba dodać
+w index.html link:
+<a href="teoria-ciemno-skutkowa.html">Poznaj Teorię Ciemno-Skutkową</a>
+
+Uwaga naukowa:
+Artykuł wyraźnie opisuje Teorię Ciemno-Skutkową jako osobistą, niepotwierdzoną
+hipotezę, a nie uznaną teorię fizyczną.
