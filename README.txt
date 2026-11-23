@@ -1,27 +1,22 @@
-ASTROBLOG ADAMA — PACZKA Z ARTYKUŁEM
+ASTROBLOG ADAMA — AKTUALIZACJA STRONY GŁÓWNEJ
 
-Plik w paczce:
-- teoria-ciemno-skutkowa.html
+W paczce znajduje się:
+- index.html — Twoja strona główna z dodanym wejściem do artykułu
+  „Teoria Ciemno-Skutkowa”.
 
-JAK DODAĆ ARTYKUŁ NA GITHUB:
-1. Rozpakuj tę paczkę ZIP.
-2. Otwórz repozytorium: adamasysa-prog/astroblog-adama.
-3. Wybierz Add file → Upload files.
-4. Przeciągnij tylko plik teoria-ciemno-skutkowa.html.
-5. Zatwierdź przyciskiem Commit changes.
+JAK WGRAC:
+1. Rozpakuj ZIP.
+2. Wejdź do repozytorium GitHub: adamasysa-prog/astroblog-adama.
+3. Otwórz plik index.html i zastąp go plikiem index.html z tej paczki
+   (możesz użyć Add file → Upload files i przesłać nowy index.html).
+4. Zatwierdź zmiany przyciskiem Commit changes.
 
 WAŻNE:
-- Nie usuwaj ani nie nadpisuj index.html.
-- Nie usuwaj ani nie nadpisuj style.css.
-- Plik artykułu dodaj do głównego katalogu repozytorium.
+- Nie usuwaj style.css.
+- Nie usuwaj betelgeza.html.
+- Nie usuwaj teoria-ciemno-skutkowa.html — ten plik musi już być
+  w głównym katalogu repozytorium, aby przycisk działał.
+- Ta paczka zawiera tylko index.html i README.txt.
 
-Po opublikowaniu artykuł będzie dostępny pod adresem:
+Po opublikowaniu przycisk „Poznaj Teorię Ciemno-Skutkową” będzie prowadził do:
 https://adamasysa-prog.github.io/astroblog-adama/teoria-ciemno-skutkowa.html
-
-Jeśli chcesz dodać odnośnik do artykułu na stronie głównej, później trzeba dodać
-w index.html link:
-<a href="teoria-ciemno-skutkowa.html">Poznaj Teorię Ciemno-Skutkową</a>
-
-Uwaga naukowa:
-Artykuł wyraźnie opisuje Teorię Ciemno-Skutkową jako osobistą, niepotwierdzoną
-hipotezę, a nie uznaną teorię fizyczną.

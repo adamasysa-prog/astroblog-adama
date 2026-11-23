@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -23,7 +22,6 @@
       color: white;
     }
 
-    /* DELIKATNE MIGOTANIE GWIAZD */
     @keyframes twinkle {
       0%, 100% { opacity: 0.65; }
       50% { opacity: 1; }
@@ -43,7 +41,6 @@
       animation: twinkle 4s infinite ease-in-out;
     }
 
-    /* KARTA BETELGEZY */
     .article-card {
       background: rgba(16, 35, 61, 0.92);
       border: 1px solid #398fe0;
@@ -54,9 +51,7 @@
       box-shadow: 0 0 18px rgba(36, 118, 199, 0.2);
     }
 
-    .article-card h2 {
-      color: #75c7ff;
-    }
+    .article-card h2 { color: #75c7ff; }
 
     .article-button {
       display: inline-block;
@@ -75,7 +70,6 @@
       box-shadow: 0 0 15px #398fe0;
     }
 
-    /* NAGŁÓWEK */
     header {
       background: rgba(5, 17, 39, 0.95);
       text-align: center;
@@ -95,9 +89,7 @@
       display: inline-block;
     }
 
-    nav a:hover {
-      color: #75c7ff;
-    }
+    nav a:hover { color: #75c7ff; }
 
     main {
       max-width: 1100px;
@@ -115,13 +107,8 @@
       font-size: 28px;
     }
 
-    section, article {
-      margin: 35px 0;
-    }
-
-    section h2, article h2 {
-      color: #75c7ff;
-    }
+    section, article { margin: 35px 0; }
+    section h2, article h2 { color: #75c7ff; }
 
     .gallery {
       display: grid;
@@ -143,9 +130,7 @@
       display: block;
     }
 
-    .card-content {
-      padding: 15px;
-    }
+    .card-content { padding: 15px; }
 
     article, .about {
       background: rgba(16, 35, 61, 0.92);
@@ -165,19 +150,18 @@
 </head>
 
 <body>
-
   <header>
     <h1>🌌 ASTROBLOG ADAMA</h1>
     <nav>
       <a href="#galeria">Galeria</a>
       <a href="#artykul">Czarne dziury</a>
       <a href="#betelgeza">Betelgeza</a>
+      <a href="#teoria">Moja teoria</a>
       <a href="#onas">O mnie</a>
     </nav>
   </header>
 
   <main>
-
     <section class="hero">
       <h2>Odkrywamy tajemnice Wszechświata 🌠</h2>
       <p>
@@ -188,9 +172,7 @@
 
     <section id="galeria">
       <h2>🔭 Galeria kosmosu</h2>
-
       <div class="gallery">
-
         <div class="card">
           <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=700"
                alt="Kolorowa galaktyka">
@@ -199,7 +181,6 @@
             <p>Olbrzymie skupiska gwiazd, gazu i pyłu kosmicznego.</p>
           </div>
         </div>
-
         <div class="card">
           <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=700"
                alt="Gwiazdy na nocnym niebie">
@@ -208,7 +189,6 @@
             <p>Gorące kule gazu świecące w ogromnej przestrzeni kosmicznej.</p>
           </div>
         </div>
-
         <div class="card">
           <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=700"
                alt="Ziemia widziana z kosmosu">
@@ -217,19 +197,16 @@
             <p>Nasza planeta jest małą częścią ogromnego Wszechświata.</p>
           </div>
         </div>
-
       </div>
     </section>
 
     <article id="artykul">
       <h2>🕳️ Czym są czarne dziury?</h2>
-
       <p>
         Czarne dziury to obszary przestrzeni, w których
         grawitacja jest tak silna, że nawet światło nie może
         się z nich wydostać.
       </p>
-
       <p>
         Powstają między innymi po zapadnięciu się bardzo
         masywnych gwiazd. Naukowcy badają je, aby lepiej
@@ -239,49 +216,54 @@
 
     <section id="betelgeza" class="article-card">
       <h2>⭐ Betelgeza – olbrzymia gwiazda z Oriona</h2>
-
       <p>
         Czy wiesz, że na niebie znajduje się gwiazda
         znacznie większa od naszego Słońca?
         Poznaj niezwykłą Betelgezę!
       </p>
-
       <p>
         Dowiedz się, dlaczego zmienia jasność, jak wielka jest
         i co może się z nią wydarzyć w przyszłości.
       </p>
-
       <a href="betelgeza.html" class="article-button">
         Czytaj artykuł o Betelgezie →
       </a>
     </section>
 
+    <!-- NOWE WEJŚCIE DO TEORII CIEMNO-SKUTKOWEJ -->
+    <section id="teoria" class="article-card">
+      <h2>🌌 Teoria Ciemno-Skutkowa – mój pomysł na powstawanie Wszechświata</h2>
+      <p>
+        Czy czarne dziury mogą mieć związek z powstawaniem nowych wszechświatów?
+        Poznaj moją autorską, niepotwierdzoną hipotezę o czarnych dziurach,
+        białych dziurach i niezwykłym portalu czasoprzestrzennym.
+      </p>
+      <a href="teoria-ciemno-skutkowa.html" class="article-button">
+        Poznaj Teorię Ciemno-Skutkową →
+      </a>
+    </section>
+
     <section id="onas" class="about">
       <h2>👨‍🚀 O mnie – Adam</h2>
-
       <p>
         Mam 11 lat i interesuję się astrofizyką.
         Fascynują mnie czarne dziury, prawa rządzące
         Wszechświatem oraz tajemnice jego powstania.
       </p>
-
       <p>
         Mam własną teorię na temat powstania Wszechświata,
         którą chciałbym kiedyś przedstawić szerzej.
       </p>
-
       <p>
         Stworzyłem tego bloga, aby dzielić się wiedzą,
         pomysłami i odkryciami z innymi miłośnikami kosmosu!
       </p>
     </section>
-
   </main>
 
   <footer>
     <p>© 2026 ASTROBLOG ADAMA | Kosmos jest fascynujący!</p>
     <p>Zdjęcia: Unsplash</p>
   </footer>
-
 </body>
 </html>
